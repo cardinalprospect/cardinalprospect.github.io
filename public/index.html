@@ -11,34 +11,33 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
   <link href="./output.css" rel="stylesheet">
   <meta name="description" content="" />
-  <!-- <link rel="icon" href="favicon.png"> -->
+  <link rel="icon" href="favicon.png">
 </head>
 
-<body class="bg-background font-sans text-gray-800 flex flex-col h-screen w-full">
+<body class="bg-background font-sans text-gray-800 flex flex-col h-screen w-screen">
 
-  <header class="w-full h-5/6 p-16 flex flex-row"
-    data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
-    <img class="rounded-lg shadow-2xl mx-auto" src="./img/cardinal-ep-cover.jpg" />
+  <header class="h-5/6 p-16" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+    <img class="rounded-lg shadow-2xl mx-auto max-w-full max-h-full" src="./img/cardinal-ep-cover.jpg" />
   </header>
-  <footer id="footer" class="h-1/6 px-16 flex flex-row"
+  <footer id="footer" class="h-1/6 px-16 md:flex md:flex-row"
     data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
-    <div class="w-4/12">
+    <div class="md:w-4/12 mb-4">
       <ul>
         <li>
-          <a class="inline-block"
+          <a class="block md:inline-block"
             href="https://open.spotify.com/artist/5ANbNFvRaL0OihUdZzXXyc?si=ZQdthfH1Qqm9d2jdg2DCNA">
-            <img src="./img/spotify-icon.svg" class="w-8 h-8" />
+            <img src="./img/spotify-icon.svg" class="w-8 h-8 mx-auto" />
           </a>
         </li>
 
       </ul>
     </div>
-    <div class="w-4/12">
+    <div class="md:w-4/12 mb-4">
       <p class="text-sm text-center text-gray-500">&copy; Cardinal Prospect 2023. All rights reserved.</p>
     </div>
-    <div class="w-4/12">
-      <h2 class="text-sm font-bold text-right">Contact</h2>
-      <p class="text-xs text-right">management@cardinalprospect.com</p>
+    <div class="md:w-4/12 mb-4">
+      <h2 class="text-sm font-bold text-center md:text-right">Contact</h2>
+      <p class="text-xs text-center md:text-right">management@cardinalprospect.com</p>
     </div>
   </footer>
 
